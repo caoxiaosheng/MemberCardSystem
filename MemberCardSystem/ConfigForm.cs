@@ -1,10 +1,9 @@
-﻿using HZH_Controls.Forms;
-using System.Linq;
+﻿using System.Linq;
 using System.Windows.Forms;
 
 namespace MemberCardSystem
 {
-    public partial class ConfigForm : FrmWithTitle
+    public partial class ConfigForm : MyFrmWithTitle
     {
         public ConfigForm()
         {

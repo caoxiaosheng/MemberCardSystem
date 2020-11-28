@@ -1,17 +1,10 @@
 ﻿using HZH_Controls.Forms;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MemberCardSystem
 {
-    public partial class PasswordForm : FrmWithTitle
+    public partial class PasswordForm : MyFrmWithTitle
     {
         public PasswordForm()
         {

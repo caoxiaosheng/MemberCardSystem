@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace MemberCardSystem
 {
-    public partial class AddMoneyForm : FrmWithTitle
+    public partial class AddMoneyForm : MyFrmWithTitle
     {
         public AddMoneyForm(string cardId)
         {
@@ -47,6 +47,5 @@ namespace MemberCardSystem
                 }
             }
         }
-
     }
 }

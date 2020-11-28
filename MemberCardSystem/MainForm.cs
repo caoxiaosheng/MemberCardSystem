@@ -1,22 +1,11 @@
-﻿using HZH_Controls.Controls;
-using HZH_Controls.Forms;
-using MemberCardSystem.Job;
-using MemberCardSystem.Models;
+﻿using MemberCardSystem.Job;
 using Quartz;
 using Quartz.Impl;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace MemberCardSystem
 {
-    public partial class MainForm : FrmWithTitle
+    public partial class MainForm : MyFrmWithTitle
     {
         public MainForm()
         {
@@ -60,14 +49,5 @@ namespace MemberCardSystem
             scheduler.ScheduleJob(job, trigger);
         }
 
-        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
-        {
-            if (keyData == Keys.Escape)
-            {
-                return true;
-            }
-
-            return base.ProcessCmdKey(ref msg, keyData);
-        }
     }
 }

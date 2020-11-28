@@ -1,5 +1,4 @@
 ﻿using HZH_Controls.Controls;
-using HZH_Controls.Forms;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,7 +6,7 @@ using System.Linq;
 
 namespace MemberCardSystem
 {
-    public partial class RecordForm : FrmWithTitle
+    public partial class RecordForm : MyFrmWithTitle
     {
         public RecordForm(string cardId)
         {

@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace MemberCardSystem
 {
-    public partial class AddCardForm : FrmWithTitle
+    public partial class AddCardForm : MyFrmWithTitle
     {
         public AddCardForm()
         {

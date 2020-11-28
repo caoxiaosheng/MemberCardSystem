@@ -12,7 +12,7 @@ using unvell.ReoGrid;
 
 namespace MemberCardSystem
 {
-    public partial class CardListForm : FrmWithTitle
+    public partial class CardListForm : MyFrmWithTitle
     {
         public CardListForm()
         {

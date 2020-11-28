@@ -2,18 +2,11 @@
 using MemberCardSystem.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MemberCardSystem
 {
-    public partial class RemovePointsForm : FrmWithTitle
+    public partial class RemovePointsForm : MyFrmWithTitle
     {
         public RemovePointsForm(string cardId)
         {
