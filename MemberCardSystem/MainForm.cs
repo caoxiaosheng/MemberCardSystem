@@ -49,5 +49,10 @@ namespace MemberCardSystem
             scheduler.ScheduleJob(job, trigger);
         }
 
+        private void ucBtnExt1_BtnClick(object sender, EventArgs e)
+        {
+            var recordForm = new RecordForm("");
+            recordForm.ShowDialog(this);
+        }
     }
 }

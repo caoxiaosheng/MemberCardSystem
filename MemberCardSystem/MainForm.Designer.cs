@@ -35,6 +35,7 @@
             this.btn_AddCard = new HZH_Controls.Controls.UCBtnExt();
             this.btn_CardList = new HZH_Controls.Controls.UCBtnExt();
             this.btn_Config = new HZH_Controls.Controls.UCBtnExt();
+            this.ucBtnExt1 = new HZH_Controls.Controls.UCBtnExt();
             this.SuspendLayout();
             // 
             // verificationComponent1
@@ -151,11 +152,39 @@
             this.btn_Config.TipsText = "";
             this.btn_Config.BtnClick += new System.EventHandler(this.btn_Config_BtnClick);
             // 
+            // ucBtnExt1
+            // 
+            this.ucBtnExt1.BackColor = System.Drawing.Color.White;
+            this.ucBtnExt1.BtnBackColor = System.Drawing.Color.White;
+            this.ucBtnExt1.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ucBtnExt1.BtnForeColor = System.Drawing.Color.White;
+            this.ucBtnExt1.BtnText = "近期消费记录";
+            this.ucBtnExt1.ConerRadius = 5;
+            this.ucBtnExt1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucBtnExt1.EnabledMouseEffect = true;
+            this.ucBtnExt1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.ucBtnExt1.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ucBtnExt1.IsRadius = true;
+            this.ucBtnExt1.IsShowRect = true;
+            this.ucBtnExt1.IsShowTips = false;
+            this.ucBtnExt1.Location = new System.Drawing.Point(376, 488);
+            this.ucBtnExt1.Margin = new System.Windows.Forms.Padding(0);
+            this.ucBtnExt1.Name = "ucBtnExt1";
+            this.ucBtnExt1.RectColor = System.Drawing.Color.Gainsboro;
+            this.ucBtnExt1.RectWidth = 1;
+            this.ucBtnExt1.Size = new System.Drawing.Size(184, 60);
+            this.ucBtnExt1.TabIndex = 11;
+            this.ucBtnExt1.TabStop = false;
+            this.ucBtnExt1.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.ucBtnExt1.TipsText = "";
+            this.ucBtnExt1.BtnClick += new System.EventHandler(this.ucBtnExt1_BtnClick);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(992, 583);
+            this.ClientSize = new System.Drawing.Size(992, 608);
+            this.Controls.Add(this.ucBtnExt1);
             this.Controls.Add(this.btn_Config);
             this.Controls.Add(this.btn_CardList);
             this.Controls.Add(this.btn_AddCard);
@@ -172,6 +201,7 @@
             this.Controls.SetChildIndex(this.btn_AddCard, 0);
             this.Controls.SetChildIndex(this.btn_CardList, 0);
             this.Controls.SetChildIndex(this.btn_Config, 0);
+            this.Controls.SetChildIndex(this.ucBtnExt1, 0);
             this.ResumeLayout(false);
 
         }
@@ -183,6 +213,7 @@
         private HZH_Controls.Controls.UCBtnExt btn_AddCard;
         private HZH_Controls.Controls.UCBtnExt btn_CardList;
         private HZH_Controls.Controls.UCBtnExt btn_Config;
+        private HZH_Controls.Controls.UCBtnExt ucBtnExt1;
     }
 }
 

@@ -22,11 +22,24 @@ namespace MemberCardSystem
             List<TimeLineItem> items = new List<TimeLineItem>();
             using (var db = new MemberCardContext())
             {
-                var records = await db.BuyRecords.Where(item => item.CardId==_cardId).OrderByDescending(item=>item.Id).ToListAsync();
-                foreach (var record in records)
+                if (String.IsNullOrWhiteSpace(_cardId))
                 {
-                    items.Add(new TimeLineItem { Title = record.RecordTime.ToString("yyyy-MM-dd HH:mm:ss"),Details=record.Record });
+                    //没传 认为是查近一百条消费记录
+                    dynamic records = await db.BuyRecords.OrderByDescending(item => item.Id).Join(db.Cards,b=>b.CardId,c=>c.CardId,(b,c)=>new {Info=b,Name=c.UserName }).Take(100).ToListAsync();
+                    foreach (var record in records)
+                    {
+                        items.Add(new TimeLineItem { Title = record.Info.RecordTime.ToString("yyyy-MM-dd HH:mm:ss"), Details =record.Info.CardId+" "+ record.Name + "    " +record.Info.Record });
+                    }
                 }
+                else
+                {
+                    var records = await db.BuyRecords.Where(item => item.CardId == _cardId).OrderByDescending(item => item.Id).ToListAsync();
+                    foreach (var record in records)
+                    {
+                        items.Add(new TimeLineItem { Title = record.RecordTime.ToString("yyyy-MM-dd HH:mm:ss"), Details = record.Record });
+                    }
+                }
+                
             }
             if (items.Count == 0)
             {
