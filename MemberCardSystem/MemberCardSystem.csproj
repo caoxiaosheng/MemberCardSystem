@@ -194,6 +194,12 @@
     <Compile Include="CardListForm.Designer.cs">
       <DependentUpon>CardListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CardSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardSelectForm.Designer.cs">
+      <DependentUpon>CardSelectForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConfigForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -263,6 +269,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CardListForm.resx">
       <DependentUpon>CardListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardSelectForm.resx">
+      <DependentUpon>CardSelectForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConfigForm.resx">
       <DependentUpon>ConfigForm.cs</DependentUpon>

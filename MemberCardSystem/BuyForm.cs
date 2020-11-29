@@ -156,13 +156,24 @@ namespace MemberCardSystem
                     ClearLabel();
                     return;
                 }
+                Card card;
                 if (cards.Count() > 1)
                 {
-                    FrmDialog.ShowDialog(this, "找到多张卡片，请联系管理员修复数据");
                     ClearLabel();
-                    return;
+                    CardSelectForm cardSelectForm = new CardSelectForm(cards);
+                    if (cardSelectForm.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                    {
+                        card = cards[cardSelectForm.SelectedIndex];
+                    }
+                    else
+                    {
+                        return;
+                    }
                 }
-                var card = cards[0];
+                else
+                {
+                    card = cards[0];
+                }
                 lbl_CardType.Text = card.CardType.ToString() ;
                 lbl_UserName.Text = card.UserName;
                 lbl_Points.Text = card.Points.ToString();
