@@ -48,6 +48,7 @@
             this.tsm_ChangeToPoint = new System.Windows.Forms.ToolStripMenuItem();
             this.tsm_Delete = new System.Windows.Forms.ToolStripMenuItem();
             this.tsm_ChangeCardInfo = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsm_RecordOldShoes = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -238,9 +239,10 @@
             this.tsm_ChangeToMoney,
             this.tsm_ChangeToPoint,
             this.tsm_Delete,
-            this.tsm_ChangeCardInfo});
+            this.tsm_ChangeCardInfo,
+            this.tsm_RecordOldShoes});
             this.contextMenuStrip.Name = "contextMenuStrip";
-            this.contextMenuStrip.Size = new System.Drawing.Size(181, 224);
+            this.contextMenuStrip.Size = new System.Drawing.Size(181, 246);
             this.contextMenuStrip.Text = "查看记录";
             // 
             // tsm_Log
@@ -306,6 +308,13 @@
             this.tsm_ChangeCardInfo.Text = "修改会员信息";
             this.tsm_ChangeCardInfo.Click += new System.EventHandler(this.tsm_ChangeCardInfo_Click);
             // 
+            // tsm_RecordOldShoes
+            // 
+            this.tsm_RecordOldShoes.Name = "tsm_RecordOldShoes";
+            this.tsm_RecordOldShoes.Size = new System.Drawing.Size(180, 22);
+            this.tsm_RecordOldShoes.Text = "登记旧鞋";
+            this.tsm_RecordOldShoes.Click += new System.EventHandler(this.tsm_RecordOldShoes_Click);
+            // 
             // CardListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -358,5 +367,6 @@
         private System.Windows.Forms.ToolStripMenuItem tsm_ChangeToPoint;
         private System.Windows.Forms.ToolStripMenuItem tsm_Delete;
         private System.Windows.Forms.ToolStripMenuItem tsm_ChangeCardInfo;
+        private System.Windows.Forms.ToolStripMenuItem tsm_RecordOldShoes;
     }
 }

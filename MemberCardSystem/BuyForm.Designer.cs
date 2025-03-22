@@ -53,6 +53,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txt_PointTotal = new HZH_Controls.Controls.UCTextBoxEx();
             this.label11 = new System.Windows.Forms.Label();
+            this.btn_OldShoes = new HZH_Controls.Controls.UCBtnExt();
             this.groupBox1.SuspendLayout();
             this.gbx_Money.SuspendLayout();
             this.gbx_Point.SuspendLayout();
@@ -540,11 +541,39 @@
             this.label11.TabIndex = 23;
             this.label11.Text = "消费总额";
             // 
+            // btn_OldShoes
+            // 
+            this.btn_OldShoes.BackColor = System.Drawing.Color.White;
+            this.btn_OldShoes.BtnBackColor = System.Drawing.Color.White;
+            this.btn_OldShoes.BtnFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_OldShoes.BtnForeColor = System.Drawing.Color.White;
+            this.btn_OldShoes.BtnText = "登记旧鞋";
+            this.btn_OldShoes.ConerRadius = 5;
+            this.btn_OldShoes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_OldShoes.EnabledMouseEffect = true;
+            this.btn_OldShoes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
+            this.btn_OldShoes.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btn_OldShoes.IsRadius = true;
+            this.btn_OldShoes.IsShowRect = true;
+            this.btn_OldShoes.IsShowTips = false;
+            this.btn_OldShoes.Location = new System.Drawing.Point(267, 425);
+            this.btn_OldShoes.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_OldShoes.Name = "btn_OldShoes";
+            this.btn_OldShoes.RectColor = System.Drawing.Color.Gainsboro;
+            this.btn_OldShoes.RectWidth = 1;
+            this.btn_OldShoes.Size = new System.Drawing.Size(159, 42);
+            this.btn_OldShoes.TabIndex = 15;
+            this.btn_OldShoes.TabStop = false;
+            this.btn_OldShoes.TipsColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(30)))), ((int)(((byte)(99)))));
+            this.btn_OldShoes.TipsText = "";
+            this.btn_OldShoes.BtnClick += new System.EventHandler(this.btn_OldShoes_BtnClick);
+            // 
             // BuyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(638, 476);
+            this.ClientSize = new System.Drawing.Size(643, 519);
+            this.Controls.Add(this.btn_OldShoes);
             this.Controls.Add(this.gbx_Point);
             this.Controls.Add(this.btn_Buy);
             this.Controls.Add(this.gbx_Money);
@@ -558,6 +587,7 @@
             this.Controls.SetChildIndex(this.gbx_Money, 0);
             this.Controls.SetChildIndex(this.btn_Buy, 0);
             this.Controls.SetChildIndex(this.gbx_Point, 0);
+            this.Controls.SetChildIndex(this.btn_OldShoes, 0);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.gbx_Money.ResumeLayout(false);
@@ -595,5 +625,6 @@
         private System.Windows.Forms.Label label8;
         private HZH_Controls.Controls.UCTextBoxEx txt_PointTotal;
         private System.Windows.Forms.Label label11;
+        private HZH_Controls.Controls.UCBtnExt btn_OldShoes;
     }
 }

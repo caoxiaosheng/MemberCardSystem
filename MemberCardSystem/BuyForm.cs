@@ -241,5 +241,15 @@ namespace MemberCardSystem
                 }
             }
         }
+
+        private void btn_OldShoes_BtnClick(object sender, EventArgs e)
+        {
+            if (currentId == null)
+            {
+                return;
+            }
+            var oldShoesForm = new OldShoesForm(currentId);
+            oldShoesForm.ShowDialog(this);
+        }
     }
 }

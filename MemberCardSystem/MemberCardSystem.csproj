@@ -222,8 +222,18 @@
     </Compile>
     <Compile Include="MemberCardContext.cs" />
     <Compile Include="MemberCardContextFactory.cs" />
+    <Compile Include="Migrations\20231216145333_AddOldShoes.cs" />
+    <Compile Include="Migrations\20231216145333_AddOldShoes.designer.cs">
+      <DependentUpon>20231216145333_AddOldShoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20231216151148_AddBuyRecordIndex.cs" />
+    <Compile Include="Migrations\20231216151148_AddBuyRecordIndex.designer.cs">
+      <DependentUpon>20231216151148_AddBuyRecordIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\MemberCardContextModelSnapshot.cs" />
     <Compile Include="Models\BuyRecord.cs" />
     <Compile Include="Models\Card.cs" />
+    <Compile Include="Models\OldShoes.cs" />
     <Compile Include="Models\Config.cs" />
     <Compile Include="Models\Gift.cs" />
     <Compile Include="MyFrmWithTitle.cs">
@@ -231,6 +241,12 @@
     </Compile>
     <Compile Include="MyFrmWithTitle.Designer.cs">
       <DependentUpon>MyFrmWithTitle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OldShoesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OldShoesForm.Designer.cs">
+      <DependentUpon>OldShoesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="PasswordForm.cs">
       <SubType>Form</SubType>
@@ -281,6 +297,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldShoesForm.resx">
+      <DependentUpon>OldShoesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PasswordForm.resx">
       <DependentUpon>PasswordForm.cs</DependentUpon>

@@ -378,6 +378,16 @@ namespace MemberCardSystem
                 await Search();
             }
         }
+
+        private void tsm_RecordOldShoes_Click(object sender, EventArgs e)
+        {
+            if (_currentCard == null)
+            {
+                return;
+            }
+            var oldShoesForm = new OldShoesForm(_currentCard.CardId);
+            oldShoesForm.ShowDialog(this);
+        }
     }
 }
 
